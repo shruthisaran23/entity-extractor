@@ -6,7 +6,7 @@ Implements:
 ### Approach
 1. PDF ingestion: PDFs are converted to text deterministically using PyMuPDF.
 
-2. Relevant section selection: The document is split into overlapping chunks. Chunks are scored and selected using keyword overlap from the topic definition. 
+2. Full document scan: The document is processed page by page, with optional chunking within each page to stay within token limits. 
 
 3. LLM-based extraction: An LLM is used as an extraction agent, conditioned on the topic definition provided at runtime. 
 

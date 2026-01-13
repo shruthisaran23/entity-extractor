@@ -43,6 +43,7 @@ SCHEMA = {
 def llm_extract(doc_id: str, topic_name: str, topic_def: str, text: str, model: str = "gpt-4o-mini") -> Dict[str, Any]:
     client = OpenAI()
 
+    # user prompt combines topic definition w/ selected doc text to condition extraction behavior
     user_prompt = (
         f"Topic name: {topic_name}\n"
         f"Topic definition: {topic_def}\n"
@@ -51,6 +52,7 @@ def llm_extract(doc_id: str, topic_name: str, topic_def: str, text: str, model: 
         f"Text:\n{text}"
     )
 
+    # call the responses API w/ structured output enabled
     resp = client.responses.create(
         model=model,
         input=[
@@ -69,6 +71,7 @@ def llm_extract(doc_id: str, topic_name: str, topic_def: str, text: str, model: 
         },
     )
 
+    # SDK returns structured output as JSON string
     raw = resp.output[0].content[0].text
     return json.loads(raw)
 
@@ -78,6 +81,8 @@ def entities_list_to_dict(items):
     for it in items or []:
         name = (it.get("name") or "").strip()
         desc = (it.get("description") or "").strip()
+
+        # avoid empty values and duplicate entity names
         if name and desc and name.lower() not in (k.lower() for k in out):
             out[name] = desc
     return out

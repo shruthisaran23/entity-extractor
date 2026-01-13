@@ -2,9 +2,17 @@
   "doc_id": "Guardian%20Accident.pdf",
   "topic": "HospitalBenefits",
   "entities": {
-    "Hospital Admission": "Benefit paid for admission to the hospital after an accident.",
-    "Hospital Confinement": "Benefit paid for confinement in a hospital after an accident.",
-    "Hospital ICU Admission": "Benefit paid for admission to the ICU after an accident.",
-    "Hospital ICU Confinement": "Benefit paid for confinement in the ICU after an accident."
+    "Hospital indemnity insurance": "Covers some of your hospital stay costs.",
+    "hospital confinement": "Hospital confinement refers to being admitted to a hospital for treatment following an accident.",
+    "Air Ambulance": "Coverage for transportation via air ambulance related to accidents.",
+    "Ambulance": "Benefit amount for ground ambulance services following an accident.",
+    "Blood/Plasma/Platelets": "Coverage payment for blood, plasma, or platelets received due to an accident.",
+    "Burns": "Compensation for treatment of burns related to accidents, graded by severity and area.",
+    "Hospital Admission": "This benefit pays $1,000 for hospital admission following an accident.",
+    "Hospital ICU Admission": "This benefit pays $2,000 for ICU admission due to injuries from an accident.",
+    "Hospital ICU Confinement": "This benefit pays $400 per day for confinement in the ICU after an accident, up to 15 days.",
+    "Rehabilitation Unit Confinement": "Benefits of $100 per day for up to 15 days are provided for confinement in a rehabilitation unit.",
+    "Surgery (Cranial, Open Abdominal, Thoracic, Hernia)": "Benefits are available for surgery with a maximum schedule of up to $1,000.",
+    "Traumatic Brain Injury": "A nondegenerative injury to the brain requiring hospital confinement for 48 hours or more due to a covered accident."
   }
 }

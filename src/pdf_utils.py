@@ -28,12 +28,9 @@ def load_pdf_bytes(url_or_path: str) -> Tuple[bytes, str]:
 
     return r.content, name
 
-
-def pdf_to_text(pdf_bytes: bytes) -> str:
-    # using PyMuPDF
+def pdf_to_pages(pdf_bytes: bytes) -> List[str]:
     doc = fitz.open(stream=pdf_bytes, filetype="pdf")
-    return "\n".join(page.get_text("text") for page in doc)
-
+    return [page.get_text("text") for page in doc]
 
 def chunk_text(text: str, max_chars: int = 2600, overlap: int = 300) -> List[str]:
 

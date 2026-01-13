@@ -1,0 +1,10 @@
+{
+  "doc_id": "Guardian%20Accident.pdf",
+  "topic": "HospitalBenefits",
+  "entities": {
+    "Hospital Admission": "Benefit paid for admission to the hospital after an accident.",
+    "Hospital Confinement": "Benefit paid for confinement in a hospital after an accident.",
+    "Hospital ICU Admission": "Benefit paid for admission to the ICU after an accident.",
+    "Hospital ICU Confinement": "Benefit paid for confinement in the ICU after an accident."
+  }
+}

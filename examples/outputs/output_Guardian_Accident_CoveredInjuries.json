@@ -1,0 +1,17 @@
+{
+  "doc_id": "Guardian_Accident.pdf",
+  "topic": "CoveredInjuries",
+  "entities": {
+    "Fractures": "Physical breaks in bones that are covered under the policy.",
+    "Gun Shot Wound": "Injury caused by a bullet or projectile, which is included in the coverage.",
+    "Hospital Admission": "The process of being admitted to a hospital, covered under the policy.",
+    "Hospital Confinement": "Staying in a hospital for treatment, which is covered for up to 1 year.",
+    "Traumatic Brain Injury": "Injury to the brain from external forces, requiring hospital confinement and leading to neurological deficits.",
+    "Burns": "Injuries caused by heat, chemicals, or electricity, varying by severity under the policy.",
+    "Concussions": "A type of brain injury caused by a blow to the head, covered under the policy.",
+    "Dislocations": "Injuries where bones are forced out of their normal position at a joint, covered under the policy.",
+    "Emergency Dental Work": "Dental procedures in emergencies due to accidents, such as crowns and extractions, covered under the policy.",
+    "Knee Cartilage": "Injury to the cartilage in the knee joint, covered under the policy.",
+    "Prosthetic Device/Artificial Limb": "Devices to replace lost limbs, covered by the accident policy with specified payouts."
+  }
+}

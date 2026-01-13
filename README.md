@@ -1,4 +1,4 @@
-## Entity extraction (insurance PDFs)
+## Entity extraction
 
 Implements:
 `extract_entities(document_url: str, topic_name: str, topic_def: str) -> dict`
